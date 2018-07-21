@@ -1,11 +1,24 @@
 /*!
- * Start Bootstrap - Agency v4.1.1 (https://startbootstrap.com/template-overviews/agency)
+ * Start lootstrap - Agency v4.1.1 (https://startbootstrap.com/template-overviews/agency)
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+/se
  */
+ .re-size { 
+   height: 171px;
+  width: 101%;
+}
+ .re-size2 { 
+   height: 171px;
+  width: 101%;
+}
+ .re-size3 { 
+   height: 171px;
+  width: 101%;
+}
  :colors{
 --global-color:rgba(128, 128, 128, 0.842);
---global-text:rgb(8, 1, 1);
+--global-text:white;
  }
  @font-face {
   font-family: sfthin;
@@ -19,13 +32,21 @@
   font-family: sFbold;
   src: url("../custom-fonts/YosemiteSanFranciscoFont-master/System\ San\ Francisco\ Display\ Bold.ttf");
 }
+
+@keyframes slide {
+  0% {
+    top: -100px
+  }
+  100% {
+    top: 5px
+  }
+}
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .serv-logo{
-  width:25%;
-  margin-top: -25%;
+  width:15%;
 }
 
 p {
@@ -94,13 +115,14 @@ section h3.section-subheading {
 
 .btn-primary {
   background-color:var(--global-color) ;
-  border-color: #1f1801;
+  border-color: rgba(2, 5, 0, 0.438);
+  color:white;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.644) !important;
-  border-color: #fec61033 !important;
-  color: black;
+  background-color: rgba(2, 5, 0, 0.438) !important;
+  border-color: rgba(2, 5, 0, 0.438)!important;
+  color: #015665;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -126,7 +148,8 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #f1f3f5b4;
+  background-color: rgba(0, 0, 0, 0.116);
+
 }
 
 #mainNav .navbar-toggler {
@@ -134,32 +157,32 @@ img::-moz-selection {
   right: 0;
   padding: 13px;
   text-transform: uppercase;
-  color: white;
+  color: var(--global-text);
   border: 0;
   background-color: rgba(128, 128, 128, 0.842) ;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:sfRegular; 
 }
 
 #mainNav .navbar-brand {
-  color:rgba(128, 128, 128, 0.842) ;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: rgba(128, 128, 128, 0.842);
+  color:white; 
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
-  font-weight: 400;
+  position: relative;
+  font-size: 3vmin;
+  font-weight: 700;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:white ;
+  font-family:sfThin; 
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color:var(--global-text) ;
+  color:rgba(255, 255, 0, 0.459) ;
 }
 
 @media (min-width: 992px) {
@@ -195,7 +218,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/team/gt.jpg");
+  background:white url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -206,37 +229,40 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 133px;
+  padding-top: 40px;
 padding-bottom: 200px;
-background-color: #0006;
-width: 124%;
-margin-left: -12%;
+color:var(--global-text);
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 5vmin;
   font-style: italic;
-  line-height: 22px;
   margin-bottom: 25px;
-  font-family:sFregular; 
+  position: relative;
+  padding-top: 80px;
+  animation: slide;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-size: 6vmin;
+  color: white;
+  font-family: sanFranciscoBold;
+  font-weight: 200;
 }
 
 
 header.masthead .intro-text .intro-heading {
-  font-size: 6vmin;
-  font-weight: 700;
+  font-size: 3vmin;
+  font-weight: 300;
   line-height: 50px;
   margin-bottom: 25px;
   font-family:sfThin; 
+  color:white;
 }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 185px;
     padding-bottom: 200px;
-background-color: #0006;
-width: 111%;
-margin-left: -6%;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -246,11 +272,25 @@ margin-left: -6%;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 40px;
     font-weight: 300;
     line-height: 75px;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+  animation: slide;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-size: 5vmin;
+  color: white;
+  font-family: sfThin;
+  font-weight: 300;
+  }
+}
+@keyframes slide {
+  0% {
+    top: -100px
+  }
+  100% {
+    top: 5px
   }
 }
 
