@@ -216,7 +216,7 @@ img::-moz-selection {
 }
 .navbar > .container, .navbar > .container-fluid {
   padding:none;
-  background: #f5f5f54d;}
+  }
 
 header.masthead {
   text-align: center;
