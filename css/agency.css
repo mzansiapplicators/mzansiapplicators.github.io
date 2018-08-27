@@ -173,7 +173,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link {
   position: relative;
-  font-size: 3vmin;
+  font-size: 2vmin;
   font-weight: 700;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -205,9 +205,10 @@ img::-moz-selection {
     padding: 1.1em 1em !important;
   }
   #mainNav.navbar-shrink {
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
-    background-color: #212529;
+    height: 6%;
+    background-color: rgba(0, 0, 0, 0.67);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -520,8 +521,6 @@ header.masthead .intro-text .intro-heading {
   position: absolute;
   z-index: 100;
   left: 0;
-  width: 80px;
-  height: 80px;
   margin-left: 0;
   text-align: center;
   color: white;
@@ -590,8 +589,8 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     margin-left: -50px;
   }
   .timeline > li .timeline-image h4 {
@@ -614,8 +613,8 @@ header.masthead .intro-text .intro-heading {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
     margin-left: -75px;
   }
   .timeline > li .timeline-image h4 {
@@ -636,8 +635,8 @@ header.masthead .intro-text .intro-heading {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
+    /* width: 170px;
+    height: 170px; */
     margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
@@ -671,9 +670,19 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
-   background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65),rgb(0, 0, 0)),url("../img/logo-1.png");
+    background-repeat: repeat, repeat;
+    background-position-x: 0%, 0%;
+    background-position-y: 0%, 0%;
+background-repeat: no-repeat;
+background-position: center;
+margin: auto 11px -35px;
+border-radius: 6px;
+box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.92),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+position: relative;
+z-index: 408;
+text-align: start;
+color:white;
 }
 
 section#contact .section-heading {
